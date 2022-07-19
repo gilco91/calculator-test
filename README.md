@@ -1,76 +1,82 @@
+# Mathemagician | M3Wx
 
-![2](https://user-images.githubusercontent.com/77827345/162690302-c160e345-9418-4f3c-8ba0-0d57c27d5391.PNG)
+> "Mathemagician" is a web app for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote.
 
-![1](https://user-images.githubusercontent.com/77827345/162690277-0e5fe3f5-220d-4407-9917-ccc794e16e2b.PNG)
+![screenshot](branding/demo.png)
 
+Our goal here is to Build a single page web application for mathematics weebs using the React library
 
-# Getting Started with Create React App
+## Live Demo
+Click [here](https://harlexkhal.github.io/Mathemagician/) to view live demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Features implemented so far are:
 
-## Available Scripts
+- Project Setup with React Installations
+- Calculator with (Add, Minus, Multiply, and Division) Features
+- Page for Mathematics Quotes
+- Home page that gives information about the history of mathematics
 
-In the project directory, you can run:
+## Built With
 
-### `npm start`
+- React (A free and open-source front-end JavaScript library for building user interfaces based on UI components)
+- React Testing Library
+- React Router version 6
+- Stylelint (A mighty, modern linter that helps you avoid errors and enforce conventions in your styles).
+- ESlint (A mighty, modern linter that helps you avoid errors and enforce conventions in JavaScript codes)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To get a local copy up and running follow these simple example steps.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+The basic requirements for building the executable are:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- A working browser application (Google chrome, Mozilla Fire fox, Microsoft edge ...)
+- VSCode or any other equivalent code editor
+- Node Package Manager (For installing packages like Lighthous, webhint & stylelint used for checking for debugging bad codes before deployment)
 
-### `npm run build`
+# Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Cloning the project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+git clone  https://github.com/harlexkhal/Mathemagician <Your-Build-Directory>
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting packages and dependencies
+To get all package modules required to build the project run:
+```
+npm install
+```
+every package module required to build the project is listed in the package.json file. this is used as a reference to get all dependencies.
 
-### `npm run eject`
+## Building 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To build the project run:
+```
+npm run build
+```
+after you run this sucessfully you'd locate the build from in the ```build``` folder located from the parent directory of the project.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Running
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To run the program on a browser through a server run this command in your cli
+```
+npm start
+```
+This should open the page in your localhost on port 3000. then you'd be able to view the built page generated using webpack.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Unit-Testing
 
-## Learn More
+You can find all of the unit test for testing all components in the ```src/__Test__``` folder located in the parent source directory of the project. you can create your own custom unit test and test it by running
+```
+npm run test
+```
+This should run all unit test found in the ```src/__Test__```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+All source code files are licensed under the permissive zlib license
+(http://opensource.org/licenses/Zlib) unless marked differently in a particular folder/file.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+- **Alexander Oguzie-Ibeh** - [github](https://github.com/harlexkhal), [linkedin](https://www.linkedin.com/in/alexander-oguzie-ibeh-776814164), [twitter](https://twitter.com/harlexkhal)
