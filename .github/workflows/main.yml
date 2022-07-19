@@ -23,21 +23,21 @@ jobs:
       - name: push to DockerHub
         run: docker push ${{ secrets.DOCKER_USER }}/calculator-test:latest
 
-  deploy: #  עושה אסאסאיץ׳ לשרת שלי 
-    needs: build #תרוץ בטור
-    runs-on: ubuntu-latest
-    steps:
-      - name: deploy app
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USER }}
-          key: ${{ secrets.PRIVATE_KEY }}
-          port: ${{ secrets.PORT }}
-          script_stop: true
-          script: |
-            sudo docker stop calc-test
-            sudo docker rm calc-test
-            sudo docker rmi gilcolman/calculator-test
-            sudo docker pull gilcolman/calculator-test
-            sudo docker run --name calc -d -p 80:3000 gilcolman/calculator-test
+  #deploy: #  עושה אסאסאיץ׳ לשרת שלי 
+  #  needs: build #תרוץ בטור
+  #  runs-on: ubuntu-latest
+  #  steps:
+  #    - name: deploy app
+  #      uses: appleboy/ssh-action@master
+  #      with:
+  #        host: ${{ secrets.HOST }}
+  #        username: ${{ secrets.USER }}
+  #        key: ${{ secrets.PRIVATE_KEY }}
+  #        port: ${{ secrets.PORT }}
+  #        script_stop: true
+  #        script: |
+  #          sudo docker stop calc-test
+  #          sudo docker rm calc-test
+  #          sudo docker rmi gilcolman/calculator-test
+  #          sudo docker pull gilcolman/calculator-test
+  #          sudo docker run --name calc -d -p 80:3000 gilcolman/calculator-test
