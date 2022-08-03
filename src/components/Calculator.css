@@ -17,15 +17,15 @@
 }
 
 button {
-  border: 0 solid rgb(216, 132, 216);
+  border: 0 solid rgb(222, 222, 222);
 }
 
 button:hover {
-  background-color: rgb(255, 72, 255);
+  background-color: rgb(221, 221, 221);
 }
 
 button:active {
-  color: rgb(145, 73, 145);
+  color: rgb(124, 124, 124);
 }
 
 .display {
