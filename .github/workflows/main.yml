@@ -18,10 +18,10 @@ jobs:
           password: ${{ secrets.DOCKER_TOKEN }}
       
       - name: Build
-        run: docker build . --tag ${{ secrets.DOCKER_USER }}/Mathemagician:latest
+        run: docker build . --tag ${{ secrets.DOCKER_USER }}/mathemagician:latest
 
       - name: push to DockerHub
-        run: docker push ${{ secrets.DOCKER_USER }}/Mathemagician:latest
+        run: docker push ${{ secrets.DOCKER_USER }}/mathemagician:latest
         
 # # כאשר יש שינוי בקוד רוצים שהוא ימחק את הקונטיינר הקודם יצור חדש ויריץ
 #   deploy: #  עושה אסאסאיץ׳ לשרת שלי 
@@ -37,8 +37,8 @@ jobs:
 #          port: ${{ secrets.PORT }}
 #          script_stop: true
 #          script: |
-#            sudo docker stop Mathemagician
-#            sudo docker rm Mathemagician
-#            sudo docker rmi gilcolman/Mathemagician
-#            sudo docker pull gilcolman/Mathemagician
-#            sudo docker run --name calc -d -p 80:3000 gilcolman/Mathemagician
+#            sudo docker stop mathemagician
+#            sudo docker rm mathemagician
+#            sudo docker rmi gilcolman/mathemagician
+#            sudo docker pull gilcolman/mathemagician
+#            sudo docker run --name calc -d -p 80:3000 gilcolman/mathemagician
