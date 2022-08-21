@@ -149,5 +149,5 @@
         enabled: true
         state: started
 
-    - name: start calculator docker
-      shell: "docker run -d -p 80:3000 -t --restart always --name calc-test gilcolman/calculator-test"
+    - name: start Mathemagician docker
+      shell: "docker run -d -p 80:3000 -t --restart always --name Mathemagician gilcolman/Mathemagician"
