@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
 jobs:
-  build: #מייצר איימג׳ מחדש ודוחף אותו לדוקר האב
+  build: 
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -23,9 +23,9 @@ jobs:
       - name: push to DockerHub
         run: docker push ${{ secrets.DOCKER_USER }}/mathemagician:latest
         
-# כאשר יש שינוי בקוד רוצים שהוא ימחק את הקונטיינר הקודם יצור חדש ויריץ
-  deploy: #  עושה אסאסאיץ׳ לשרת שלי 
-   needs: build #תרוץ בטור
+
+  deploy: 
+   needs: build 
    runs-on: ubuntu-latest
    steps:
      - name: deploy app
